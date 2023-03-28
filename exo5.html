@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+   
+	<h2>Vos coordonnées</h2>
+	<p>*Ces zones sont obligatoires pour envoyer le formulaire.</p>
+	<form action="submit_form.php" method="POST">
+		<label for="societe">Société:</label>
+		<input type="text" id="societe" name="societe"   ><br><br>
+
+		<label for="personne">Personne à contacter:</label>
+		<input type="text" id="personne" name="personne" ><br><br>
+
+		<label for="adresse">Adresse:</label>
+		<input type="text" id="adresse" name="adresse"><br><br>
+
+		<label for="codepostal">Code postal:</label>
+		<input type="text" id="codepostal" name="codepostal" pattern="[0-9]{5}"><br><br>
+
+		<label for="ville">Ville:</label>
+		<input type="text" id="ville" name="ville" ><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" ><br><br>
+
+		<label for="environnement">Environnement technique:</label>
+		<select id="environnement" name="environnement[]" >
+			<option value="choisir" selected>Choisissez</option>
+			<option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+			<option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+			<option value="Windows NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+			<option value="Oracle">Oracle</option>
+			<option value="Autres">Autres...</option>
+		</select><br><br>
+
+		<label for="commentaires">Commentaires:</label>
+		<textarea id="commentaires" name="commentaires" ></textarea><br><br>
+
+		<input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+	</form>
+    
+
+    <script src="assets/js/exo5.js"></script>
+</body>
+</html>
